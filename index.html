@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Scientific Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- History -->
+    <div class="history-panel">
+
+        <div class="history-header">
+            <h2>History</h2>
+            <button id="clearHistory">Clear</button>
+        </div>
+
+        <div id="history"></div>
+
+    </div>
+
+
+    <!-- Calculator -->
+
+    <div class="calculator glass">
+
+        <!-- Top Bar -->
+
+        <div class="top-bar">
+
+            <h2>Calculator</h2>
+
+            <button id="themeBtn">
+                🌙
+            </button>
+
+        </div>
+
+
+        <!-- Display -->
+
+        <input
+            type="text"
+            id="display"
+            readonly
+            placeholder="0"
+        >
+
+
+        <!-- Buttons -->
+
+        <div class="buttons">
+
+            <!-- Row 1 -->
+
+            <button class="operator">C</button>
+            <button class="operator">⌫</button>
+            <button class="operator">(</button>
+            <button class="operator">)</button>
+            <button class="operator">%</button>
+
+            <!-- Row 2 -->
+
+            <button class="scientific">sin</button>
+            <button class="scientific">cos</button>
+            <button class="scientific">tan</button>
+            <button class="scientific">√</button>
+            <button class="operator">÷</button>
+
+            <!-- Row 3 -->
+
+            <button class="scientific">x²</button>
+            <button class="scientific">x³</button>
+            <button class="scientific">π</button>
+            <button class="scientific">e</button>
+            <button class="operator">×</button>
+
+            <!-- Row 4 -->
+
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button class="scientific">±</button>
+            <button class="operator">-</button>
+
+            <!-- Row 5 -->
+
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button class="scientific">^</button>
+            <button class="operator">+</button>
+
+            <!-- Row 6 -->
+
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button id="copyBtn">📋</button>
+            <button class="equal">=</button>
+
+            <!-- Row 7 -->
+
+            <button class="zero">0</button>
+            <button>.</button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Click Sound -->
+
+<audio id="clickSound" src="click.mp3"></audio>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
